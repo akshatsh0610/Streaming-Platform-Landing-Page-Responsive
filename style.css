@@ -1,0 +1,76 @@
+:root{
+    --main-color:#1ce783;
+    --bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+}
+span{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.header{
+    display: flex;
+    padding: 2rem 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    text-transform: none;
+    color: var(--main-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+}
+.header button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(197, 197, 197);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    background-color: transparent;
+    padding: 0.8rem 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.header button:hover{
+    background-color: rgba(142, 161, 223, 0.413);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 12rem 0;
+    padding: 3rem 1rem;
+}
+.main .main_1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 1.5rem;
+}
+.main .main_1 .main_card{
+    padding: 3rem 2rem;
+}
+.main .main_1 .main_card img{
+    width: 100%;
+    height: 100%;
+}
