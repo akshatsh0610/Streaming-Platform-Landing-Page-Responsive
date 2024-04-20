@@ -59,18 +59,29 @@ span{
     justify-content: center;
     text-align: center;
     color: white;
-    margin: 12rem 0;
+    margin: 10rem 0;
     padding: 3rem 1rem;
 }
 .main .main_1{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
-    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
 }
 .main .main_1 .main_card{
     padding: 3rem 2rem;
 }
-.main .main_1 .main_card img{
-    width: 100%;
+.main .main_1 .main_card .p1{
+    color: var(--main-color);
+    font-size: small;
+    font-weight: bolder;
+    margin-bottom: 5rem;
+}
+.main .main_1 .main_card .img1{
+    width: 15vw;
+    height: 100%;
+}
+.main .main_1 .main_card .img2{
+    width: 21vw;
     height: 100%;
 }
